@@ -1,0 +1,32 @@
+# Virtual environment
+venv/
+
+# Python caches and compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# FAISS and ingestion outputs
+storage/index.faiss
+storage/metadata.json
+
+# IDE / Editor configuration files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+Thumbs.db
+.DS_Store
