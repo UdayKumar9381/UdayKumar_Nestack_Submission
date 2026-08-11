@@ -17,9 +17,6 @@ venv.bak/
 .env.*
 !.env.example
 
-# FAISS and ingestion outputs
-storage/index.faiss
-storage/metadata.json
 
 # IDE / Editor configuration files
 .vscode/
