@@ -121,7 +121,11 @@ def main():
     # 5. Generate embeddings using sentence-transformers
     print("Loading SentenceTransformer model 'all-MiniLM-L6-v2'...")
     try:
-        model = SentenceTransformer("all-MiniLM-L6-v2")
+        model = SentenceTransformer(
+            "all-MiniLM-L6-v2",
+            backend="onnx",
+            model_kwargs={"file_name": "onnx/model.onnx"}
+        )
     except Exception as e:
         print(f"Error: Failed to load embedding model. Details: {e}", file=sys.stderr)
         sys.exit(1)

@@ -57,7 +57,11 @@ async def lifespan(app: FastAPI):
         
     # Load embedding model
     try:
-        model = SentenceTransformer("all-MiniLM-L6-v2")
+        model = SentenceTransformer(
+            "all-MiniLM-L6-v2",
+            backend="onnx",
+            model_kwargs={"file_name": "onnx/model.onnx"}
+        )
     except Exception as e:
         sys.exit(f"Startup Error: Failed to load embedding model. Details: {e}")
         
