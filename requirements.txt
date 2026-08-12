@@ -2,11 +2,6 @@ faiss-cpu==1.15.0
 fastapi==0.141.1
 numpy==2.2.6
 pymupdf==1.28.2
-sentence-transformers==5.7.0
-scipy==1.15.3
-torch==2.13.0
-transformers==5.15.0
+sentence-transformers[onnx]==5.7.0
 uvicorn==0.52.1
-onnx==1.22.0
-onnxruntime==1.28.0
-optimum==2.1.0
+optimum-onnx[onnxruntime]==0.1.0
