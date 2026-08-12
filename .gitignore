@@ -28,3 +28,5 @@ venv.bak/
 Thumbs.db
 .DS_Store
 render-test/
+.vercel
+.env*
